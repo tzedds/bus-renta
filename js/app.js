@@ -1,4 +1,5 @@
 const buses = [
+
     {
         id: 'BUS-001',
         name: 'Mercedes Sprinter',
@@ -8,6 +9,7 @@ const buses = [
         status: 'available',
         features: ['Aire acondicionado', 'WiFi', 'USB']
     },
+
     {
         id: 'BUS-002',
         name: 'Volvo 9800',
@@ -17,6 +19,7 @@ const buses = [
         status: 'available',
         features: ['Aire acondicionado', 'WiFi', 'USB', 'Baño', 'Pantallas']
     },
+
     {
         id: 'BUS-003',
         name: 'Irizar i8',
@@ -26,6 +29,7 @@ const buses = [
         status: 'available',
         features: ['Aire acondicionado', 'WiFi', 'USB', 'Pantallas', 'Asientos Reclinables', 'Baños']
     },
+
     {
         id: 'BUS-004',
         name: 'Mercedes Sprinter',
@@ -35,6 +39,7 @@ const buses = [
         status: 'available',
         features: ['Aire acondicionado', 'WiFi', 'USB', 'Pantallas']
     },
+
     {
         id: 'BUS-005',
         name: 'Volvo',
@@ -43,7 +48,107 @@ const buses = [
         price: 10000,
         status: 'available',
         features: ['Aire acondicionado', 'WiFi', 'USB', 'Baños', 'Pantallas']
+    },
+
+    {
+        id: 'BUS-006',
+        name: 'Scania Irizar i6',
+        type: 'Turismo',
+        seats: 40,
+        price: 8500,
+        status: 'available',
+        features: ['Aire acondicionado', 'WiFi', 'USB', 'Pantallas', 'Asientos Reclinables']
+    },
+
+    {
+        id: 'BUS-007',
+        name: 'Mercedes-Benz Tourismo',
+        type: 'Premium',
+        seats: 49,
+        price: 11500,
+        status: 'available',
+        features: ['Aire acondicionado', 'WiFi', 'USB', 'Baño', 'Pantallas', 'Asientos Reclinables']
+    },
+
+    {
+        id: 'BUS-008',
+        name: 'MAN Lion Coach',
+        type: 'Turismo',
+        seats: 46,
+        price: 9800,
+        status: 'available',
+        features: ['Aire acondicionado', 'WiFi', 'USB', 'Baño', 'Pantallas']
+    },
+
+    {
+        id: 'BUS-009',
+        name: 'Volvo B11R',
+        type: 'Premium',
+        seats: 52,
+        price: 13500,
+        status: 'available',
+        features: ['Aire acondicionado', 'WiFi', 'USB', 'Baños', 'Pantallas', 'Asientos Reclinables']
+    },
+
+    {
+        id: 'BUS-010',
+        name: 'Mercedes-Benz Sprinter 516',
+        type: 'Ejecutivo',
+        seats: 24,
+        price: 6500,
+        status: 'available',
+        features: ['Aire acondicionado', 'WiFi', 'USB', 'Pantallas', 'Asientos Reclinables']
+    },
+        {
+        id: 'BUS-011',
+        name: 'Volvo 9700',
+        type: 'Turismo',
+        seats: 44,
+        price: 9200,
+        status: 'available',
+        features: ['Aire acondicionado', 'WiFi', 'USB', 'Baño', 'Pantallas']
+    },
+
+    {
+        id: 'BUS-012',
+        name: 'Irizar i6s',
+        type: 'Premium',
+        seats: 48,
+        price: 11000,
+        status: 'available',
+        features: ['Aire acondicionado', 'WiFi', 'USB', 'Baños', 'Pantallas', 'Asientos Reclinables']
+    },
+
+    {
+        id: 'BUS-013',
+        name: 'Scania Touring',
+        type: 'Turismo',
+        seats: 50,
+        price: 10500,
+        status: 'available',
+        features: ['Aire acondicionado', 'WiFi', 'USB', 'Baño', 'Pantallas', 'Asientos Reclinables']
+    },
+
+    {
+        id: 'BUS-014',
+        name: 'Mercedes-Benz Sprinter 519',
+        type: 'Ejecutivo',
+        seats: 22,
+        price: 6000,
+        status: 'available',
+        features: ['Aire acondicionado', 'WiFi', 'USB', 'Pantallas']
+    },
+
+    {
+        id: 'BUS-015',
+        name: 'Setra S 516 HD',
+        type: 'Premium',
+        seats: 55,
+        price: 14500,
+        status: 'available',
+        features: ['Aire acondicionado', 'WiFi', 'USB', 'Baño', 'Pantallas', 'Asientos Reclinables']
     }
+
 ];
 
 const busContainer = document.querySelector('#bus-container');
