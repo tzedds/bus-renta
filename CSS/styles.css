@@ -1,0 +1,55 @@
+:root {
+    --busrent-bg: #f5f7fb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--busrent-bg);
+    min-height: 100vh;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #ffffff 0%, #eef4ff 100%);
+}
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+.bus-hero-icon {
+    font-size: clamp(7rem, 15vw, 12rem);
+    line-height: 1;
+}
+
+.bus-card {
+    border: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bus-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0 0 0 / 10%);
+}
+
+.bus-icon {
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    background: #eef4ff;
+    font-size: 2rem;
+}
+
+.feature-pill {
+    display: inline-block;
+    margin: 0.15rem;
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    background: #f0f1f3;
+    color: #555;
+    font-size: 0.8rem;
+}
