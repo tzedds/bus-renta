@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  <title>
+    BusRent | Seed Firebase
+  </title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+</head>
+
+<body class="bg-light">
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div
+          class="card border-0 shadow"
+        >
+          <div class="card-body p-5">
+            <span
+              class="badge text-bg-warning mb-3"
+            >
+              Herramienta académica
+            </span>
+            <h1 class="fw-bold">
+              🚌 BusRent
+            </h1>
+            <h2 class="h4 text-secondary mb-4">
+              Inicialización de Firestore
+            </h2>
+            <p>
+              Este script insertará toda
+              la información necesaria
+              para trabajar hasta la
+              sesión 2.
+            </p>
+            <hr>
+            <h3 class="h5">
+              Se crearán:
+            </h3>
+            <ul>
+              <li>
+                Colección
+                <code>buses
+              </li>
+              <li>
+                4 autobuses
+              </li>
+              <li>
+                Colección
+                <code>routes</code>
+              </li>
+              <li>
+                4 rutas
+              </li>
+            </ul>
+            <div
+              class="alert alert-warning"
+            >
+              Si ya existen datos en
+              <code>buses</code>
+              o
+              <code>routes</code>,
+              serán eliminados y
+              recreados.
+            </div>
+            <button
+              id="seed-button"
+              class="btn btn-primary btn-lg"
+            >
+              Insertar datos en Firebase
+            </button>
+            <div
+              id="seed-status"
+              class="alert alert-secondary mt-4"
+            >
+              Listo para ejecutar.
+            </div>
+
+            <hr>
+
+            <a
+              href="./index.html"
+              class="btn btn-outline-secondary"
+            >
+              Ir a BusRent
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script
+    type="module"
+    src="./js/seed.js"
+  ></script>
+</body>
+</html></code>

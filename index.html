@@ -28,17 +28,14 @@
             <div class="row align-items-center min-vh-50">
                 <div class="col-lg-7">
                     <span class="badge text-bg-warning mb-3">
-                        Proyecto de Repaso
+                        Busca tu proximo viaje 🏖️
                     </span>
                     <h1 class="display-4 fw-bold">
-                        Encuentra el autobus ideal para tu viaje 
+                        Autobuses para grupos, empresas y turismo 
                     </h1>
                     <p class="lead text-secondary">
-                        Consulta Unidades, capacidad y precio base
+                        Selecciona una ruta, fecha y numero de pasajeros
                     </p>
-                    <a href="#catalog" class="btn btn-primary btn-lg">
-                        Ver Autobuses
-                    </a>
                 </div>
                 <div class="col-lg-5 text-center mt-4 mt-lg-8">
                     <div class="bus-hero-icon">
@@ -48,12 +45,44 @@
             </div>
         </div>
     </header>
-    <main>
-        <section id="catalog" class="container py-5">
+    <main class="container py-5">
+        <section class="card card-border-0 shadow-sm mb-5">
+            <div class="card-body p-4 p-lg-5">
+                <h2 class="h3 fw-bold mb-4">
+                    Buscar Autobus
+                </h2>
+                <form id="search-form">
+                    <div class="row g-3">
+                        <div class="col-lg-5">
+                            <label for="route" class="form-label">Ruta</label>
+                            <select id="route" required class="form-select">
+                                <option value="">
+                                    Cargando rutas...
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <label for="travel-date" class="form-label">Fecha</label>
+                            <input id="travel-date" required type="date" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-lg-2">
+                            <label for="passengers" class="form-label">Pasajeros</label>
+                            <input id="passengers" required type="number" class="form-control" min="1" max="70" value="1">
+                        </div>
+                        <div class="col-lg-2 d-flex align-items-end">
+                            <button class="btn btn-primary w-100">
+                                Buscar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section>
             <div class="d-flex justify-content-between align-items-end mb-4">
                 <div>
                     <p class="text-primary fw-bold mb-1">
-                        CATÁLOGO
+                        RESULTADOS
                     </p>
                     <h2 class="fw-bold mb-0">
                         Autobuses Disponibles
@@ -62,6 +91,9 @@
                 <span id="bus-count" class="badge rounded-pill text-bg-dark">
                     0 Unidades
                 </span>
+            </div>
+            <div id="status-message" class="alert alert-info">
+                Selecciona los datos del viaje
             </div>
             <div id="bus-container" class="row g-4">
             </div>
@@ -77,7 +109,6 @@
             </div>
         </section>
     </main>
-
     <footer class="bg-dark text-white py-4">  
         <div class="container text-center">
             <small>
